@@ -1,6 +1,6 @@
 complete <- function(directory, id = 1:332) {
   ## create the data frame
-  df <- data.frame(id=character(length(id)),nobs=character(length(id)),stringsAsFactors=F)
+  df <- data.frame(id=character(length(id)),nobs=numeric(length(id)),stringsAsFactors=F)
   
   ## Loop through the id
   for (i in seq_along(id)) {
